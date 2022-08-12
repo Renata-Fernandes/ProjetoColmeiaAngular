@@ -1,0 +1,566 @@
+/*Cabeçalho*/
+
+* {
+    margin: 0;
+    padding: 0;    
+}
+a {
+    text-decoration: none;
+}
+.logo img {
+    height: 100px;
+    width: 100px;
+    margin-right: 25px;
+}
+.name-tag {
+    margin-left: 220px;
+    text-align: center;
+    margin-top: -100px;
+    font-family:Hind Siliguri;
+    font-size:15px;
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Header */
+.header {
+    display:block;
+    padding-left: 30px;
+    align-items: center;   
+    position:absolute;
+    margin-top: 20px;
+
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links ul {
+    display: flex;    
+}
+.nav-links ul li {
+    margin-right: 0px;
+}
+.nav-links ul li a {
+    font-size: 12px;    
+    display: flex;
+    color: #4e3123;
+    align-items: center;
+    text-transform: uppercase;
+    font-family:Hind Siliguri;
+    font-size:15px;
+    letter-spacing: 0.15em;
+}
+.nav-links p:after {
+    bottom: -5px;    
+    content: "";
+    display: block;
+    border-radius: 10px;
+    height: 2px;
+    left: 0;
+    position: relative;
+    background: #fdb018;
+    transition: 0.2s ease 0s, left 0.2s ease 0s;
+    width: 0;
+    opacity: 0;
+}
+.nav-links a:hover p:after {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Botão cadastre-se*/
+.cadastre {
+    position:static;
+    display:block;
+    right: 100px;
+    margin: 0;
+    height: 0%;
+    align-items: center;
+    margin-top: -100px;
+    width: 100px;
+    margin-left: -80px;
+    font-family:Hind Siliguri;
+    font-size:15px;    
+} 
+.cadastre:hover {
+    display:block;
+}
+.nav-links li button{
+    box-shadow:8px 8px 30px rgba(255,250,250);
+	background-color:rgba(232, 216, 183, 0.79);
+    border-top-left-radius:12px;
+	border-top-right-radius:12px;
+	border-bottom-left-radius:12px;
+	border-bottom-right-radius:12px;
+    border:1px solid rgba(253.0000001192093, 176.00000470876694, 24.000000469386578, 1)
+}
+
+/* texto chamada */
+
+.texto-chamada { 
+	width:700px;
+	height:400px;
+	position:absolute;
+	left:80px;
+	top:237px;
+}
+.ei205_2399_46_177 { 
+	height:311px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.espacamento-imagem { 
+	width:372px;
+	height:211px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.chamada { 
+	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
+	width:453px;
+	height:145px;
+	position:absolute;
+	left:8px;
+	top:8px;
+	font-family:Niramit;
+	text-align:center;
+	font-size:30px;
+	letter-spacing:0;	
+}
+.descricao { 
+	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
+	width:453px;
+	height:236px;
+	position:absolute;
+	left:8px;
+	top:90px;
+	font-family:Niramit;
+	text-align:justify;
+	font-size:18x;
+	letter-spacing:0;
+	line-height:px;
+}
+.ei205_2399_46_177_46_171 { 
+	height:42px;
+	position:absolute;
+	left:8px;
+	top:269px;
+	align-items: center;
+}
+.saiba-mais { 
+	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
+	width:158px;
+	height:42px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Niramit;
+	text-align:left;
+	font-size:18px;
+	letter-spacing:0;
+	line-height:px;
+}
+.ei205_2399_46_177_46_173 { 	
+	height:38.81261444091797px;
+	position:absolute;
+	left:90px;
+	top:4px;
+	align-items: center;
+}
+.seta-rosa { 	
+	width:80px;
+	height:30px;
+	position:absolute;
+	left:-10px;
+	top: 0px;
+	align-items: center;
+}
+.imagem-top { 
+	box-shadow:-15px -15px 30px rgba(232.00000137090683, 216.00001752376556, 183.00000429153442, 1);
+	width:445px;
+	height:254px;
+	position:absolute;
+	left:640px;
+	/*top:58.5px;*/
+	align-items:baseline;
+	background-image:url(../../assets/imagens/rectangle_4.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	animation: display 2s normal;
+}
+
+/*frase de efeito*/
+
+.frase-efeito { 
+	
+	height:576px;
+	position:absolute;
+	left:396px;
+	top:628px;
+}
+.imagem-fundo { 
+	width:300px;
+	height:142px;
+	position:absolute;
+	left:-38px;
+	top:230px;
+	opacity: 0.9;	
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.frase { 
+	box-shadow:-15px -15px 30px rgba(232.00000137090683, 216.00001752376556, 183.00000429153442, 1);
+	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
+	width:450px;
+	height:351px;
+	position:absolute;
+	left:28.5px;	
+	font-family:Niramit;
+	text-align:center;
+	font-size:30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 60px;
+	letter-spacing:0;
+}
+.e205_2403 { 	
+	height:10px;
+	position:absolute;
+	left:0px;	
+	margin-top: 1150px;
+}
+.passo-a-passo { 
+	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
+	width:250px;
+	height:30px;
+	position:absolute;
+	left:80px;
+	top:0px;
+	font-family:Niramit;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;	
+}
+.fluxo{
+	width:850px;
+	height:600px;
+	position:absolute;	
+	left:150px;
+	top:-70px;	
+	display: block;	
+	margin-bottom: auto;
+}
+
+/*Descritivo de como doar*/
+
+.espacamento-para-doar { 
+	width:800px;
+	height:800px;
+	position:absolute;
+	left:-28px;
+	top:1584px;	
+	text-align: justify;
+}
+.ei205_2422_46_315 { 
+	width:800px;
+	height:632px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.ei205_2422_46_315_46_313 { 
+	width:800px;
+	height:616px;
+	position:absolute;
+	left:80px;
+	top:8px;
+}
+.ei205_2422_46_315_46_312 { 
+	width:800px;
+	height:616px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.ei205_2422_46_315_46_310 { 
+	width:800px;
+	height:60px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.ei205_2422_46_315_46_306 { 
+	width:775px;
+	height:38px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.para-doar { 
+	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
+	width:500px;
+	height:39px;
+	position:absolute;
+	left:16px;
+	top:0px;
+	font-family:Hind Siliguri;
+	text-align:left;
+	font-size:18px;
+	letter-spacing:0;
+}
+.para-receber { 
+	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 0.5);
+	width:500px;
+	height:39px;
+	position:absolute;
+	left:200px;
+	top:0px;
+	font-family:Hind Siliguri;
+	text-align:left;
+	font-size:18px;
+	letter-spacing:0;
+}
+.ei205_2422_46_315_46_309 { 
+	width:590px;
+	height:25px;
+	position:absolute;
+	left:0px;
+	top:20px;
+}
+.linha { 
+	background-color:rgba(232.00000137090683, 216.00000232458115, 183.00000429153442, 1);
+	width:590px;
+	height:3px;
+	position:absolute;
+	left:10px;
+	top:10px;
+}
+.ei205_2422_46_315_46_302 { 
+	width:163px;
+	height:0px;
+	position:absolute;
+	left:0.5018081665039062px;
+	top:5px;
+	
+}
+.como-doar { 
+	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
+	width:590px;
+	height:540px;
+	position:absolute;
+	left:9.95404052734375px;
+	top:76px;
+	text-align:justified;
+	font-size:18px;
+	letter-spacing:0;
+}
+.imagem-latas { 
+	width:484px;
+	height:354px;
+	position:absolute;
+	left:700px;
+	top:53px;
+	background-repeat:no-repeat;
+	background-size:cover;	
+	animation: display 2s normal;
+}
+
+/*produtos*/
+
+.alinhamento-produtos { 	
+	height:375px;
+	position:absolute;
+	left:-20px;
+	top:2090px;
+}
+.e205_2424 { 
+	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
+	width:418px;
+	height:35px;
+	position:absolute;
+	left:88px;
+	top:0px;
+	font-family:Hind Siliguri;
+	text-align:justified;
+	font-size:20px;
+	letter-spacing:0;
+}
+.sombra-produtos { 	
+	width:800px;
+	height:100px;
+	position:absolute;
+	left:80px;
+	margin-right: 20px;	
+	top:1px;
+}
+.pic{
+    height: 200px;
+    width: 200px;
+    object-fit:fill;      
+    display: inline;    
+    margin: 15px;   
+    text-align: center;    
+}
+.pic-ctn {
+  width: 100vw;
+  height: 200px;
+  object-fit: fill;
+  display: flex;  
+}
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+.pic-ctn {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  margin-top: 15vh;
+}
+.pic-ctn > img {
+  position:static;
+  top: 0;
+  left: calc(50% - 100px);
+  opacity: 0;
+  animation: display 5s infinite;
+}
+img:nth-child(2) {
+  animation-delay: 1s;
+}
+img:nth-child(3) {
+  animation-delay: 2s;
+}
+img:nth-child(4) {
+  animation-delay: 3s;
+}
+img:nth-child(5) {
+  animation-delay: 4s;
+}
+
+/*área de atuação*/
+
+.e205_2431 { 
+	width:800px;
+	height:335px;
+	position:absolute;
+	left:0px;
+	top:2400px;
+}
+.e205_2431 a{
+	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
+	text-decoration: none;
+}
+.e205_2431 a:hover{
+	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
+	text-decoration: none;
+}
+.area-atuacao { 
+	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
+	width:238px;
+	height:39px;
+	position:absolute;
+	left:80px;
+	top:80px;
+	font-family:Hind Siliguri;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.mapa { 	
+	position:absolute;
+	left: 160px;
+	top: 150px;		
+}
+
+/*rodapé*/
+
+.footer {
+    display:flexbox;
+    padding-left: 30px;
+    align-items: center;
+    position:absolute;
+    margin-top: 3200px;    
+    font-family:Hind Siliguri;
+}
+.direitos{
+    color: #4e3123;
+    align-items: center;    
+    font-family:Hind Siliguri;
+    font-size:8px;
+    text-align: center;
+    margin-left: 2px;
+    margin-top: -35px;
+}
+.direitos a{
+    color: #4e3123;
+    align-items: center;    
+    font-family:Hind Siliguri;
+    font-size:8px;
+    text-align: center;
+    margin-left: -5px;
+}
+.direitos a:hover{
+    color: #4e3123;
+    align-items: center;    
+    font-family:Hind Siliguri;
+    font-size:8px;
+    text-align: center;
+    margin-left: -5px;
+}
+.footer-links li {
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
+.footer-links ul {
+    display: flex;    
+    text-align: center;
+    align-items: center;
+}
+.footer-links ul li a {
+    margin-right: 30px;
+    margin-left: 180px;
+    margin-top: 20px;
+    display: flex;
+    color: #4e3123;    
+    text-transform: uppercase;
+    font-family:Hind Siliguri;
+    font-size:15px;
+    letter-spacing: 0.15em;
+    text-align: center;   
+}
+.termos{
+    text-align: center;  
+    margin-left: 270px;
+    margin-top: -90px;
+}
+.sobre {
+    text-align: center;  
+    margin-left: 326px;
+    margin-top: -90px;   
+}
+.contato {
+    text-align: center;  
+    margin-left: 150px;
+    margin-top: -90px;   
+}
+
