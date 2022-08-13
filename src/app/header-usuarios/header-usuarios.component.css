@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;    
+}
+a {
+    text-decoration: none;
+}
+.logo img {
+    height: 100px;
+    width: 100px;
+    margin-right: 25px;
+}
+.name-tag {
+    margin-left: 220px;
+    text-align: center;
+    margin-top: -100px;
+    font-family:Hind Siliguri;
+    font-size:14px;
+    width: 110px;
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Header */
+.header {
+    display:block;
+    padding-left: 30px;
+    align-items: center;   
+    position:absolute;
+    margin-top: 20px;
+
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links ul {
+    display: flex;    
+}
+.nav-links ul li {
+    margin-right: 0px;
+}
+.nav-links ul li a {
+    font-size: 12px;    
+    display: flex;
+    color: #4e3123;
+    align-items: center;
+    text-transform: uppercase;
+    font-family:Hind Siliguri;
+    font-size:15px;
+    letter-spacing: 0.15em;
+}
+.nav-links p:after {
+    bottom: -5px;    
+    content: "";
+    display: block;
+    border-radius: 10px;
+    height: 2px;
+    left: 0;
+    position: relative;
+    background: #fdb018;
+    transition: 0.2s ease 0s, left 0.2s ease 0s;
+    width: 0;
+    opacity: 0;
+}
+.nav-links a:hover p:after {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Botão sair*/
+.botao-sair {
+    position:static;
+    display:block;
+    right: 100px;
+    margin: 0;
+    height: 30px;
+    align-items: center;
+    margin-top: -100px;
+    width: 30px;
+    margin-left: -80px;
+     
+} 
+.botao-sair:hover {
+    display:block;
+}
