@@ -13,6 +13,15 @@ import { TermosComponent } from './termos/termos.component';
 import { ContatoComponent } from './contato/contato.component';
 import { CadastreComponent } from './cadastre/cadastre.component';
 import { AreaDeAtuacaoComponent } from './area-de-atuacao/area-de-atuacao.component';
+import { BeneficiarioHomeComponent } from './beneficiario-home/beneficiario-home.component';
+import { ProdutosBeneficiarioComponent } from './produtos-beneficiario/produtos-beneficiario.component';
+import { ConfirmarProdutosComponent } from './confirmar-produtos/confirmar-produtos.component';
+import { SelecionarDatasComponent } from './selecionar-datas/selecionar-datas.component';
+import { ConfirmacaoAgendamentoComponent } from './confirmacao-agendamento/confirmacao-agendamento.component';
+import { HeaderUsuariosComponent } from './header-usuarios/header-usuarios.component';
+import { CadastroBeneficiarioComponent } from './cadastro-beneficiario/cadastro-beneficiario.component';
+import { CadastroDoadorComponent } from './cadastro-doador/cadastro-doador.component';
+import { CadastroCdComponent } from './cadastro-cd/cadastro-cd.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +35,16 @@ import { AreaDeAtuacaoComponent } from './area-de-atuacao/area-de-atuacao.compon
     TermosComponent,
     ContatoComponent,
     CadastreComponent,
-    AreaDeAtuacaoComponent
+    AreaDeAtuacaoComponent,
+    BeneficiarioHomeComponent,
+    ProdutosBeneficiarioComponent,
+    ConfirmarProdutosComponent,
+    SelecionarDatasComponent,
+    ConfirmacaoAgendamentoComponent,
+    HeaderUsuariosComponent,
+    CadastroBeneficiarioComponent,
+    CadastroDoadorComponent,
+    CadastroCdComponent
   ],
   imports: [
     BrowserModule,
