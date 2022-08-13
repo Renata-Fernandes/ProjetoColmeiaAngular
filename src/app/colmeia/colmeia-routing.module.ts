@@ -8,7 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { ProdutosBeneficiarioComponent } from './produtos-beneficiario/produtos-beneficiario.component';
 import { CadastroBeneficiarioComponent } from './cadastro-beneficiario/cadastro-beneficiario.component';
 import { SobreComponent } from '../sobre/sobre.component';
-import { ProdutosBeneficiarioModule } from '../produtos-beneficiario/produtos-beneficiario.module';
+import { ProdutosBeneficiariodModule } from './produtos-beneficiario/produtos-beneficiario.module';
 
 const routes: Routes = [
     {
@@ -16,7 +16,7 @@ const routes: Routes = [
         path:'', component: ColmeiaComponent, children:[
             {path:'', redirectTo:'home', pathMatch:'full'},
             {path:'home', component: HomeComponent},
-            {path:'produtos-beneficiario', loadChildren:()=>ProdutosBeneficiarioModule,
+            {path:'produtos-beneficiario', loadChildren:()=> ProdutosBeneficiariodModule},
             {path:'cadastro-beneficiario', component: CadastroBeneficiarioComponent},
             {path:'sobre', component: SobreComponent},
 
@@ -29,4 +29,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class ColmeiaModule { }
+export class ColmeiaRoutingModule { }
