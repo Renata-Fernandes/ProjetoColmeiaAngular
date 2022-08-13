@@ -1,17 +1,13 @@
-import { Cliente } from './Cliente';
+import { Usuario } from './Usuario';
 import { Categoria } from "./Categoria";
 
 export class Produto {
-    public id: number;
-    public nome: string;
-    public descricao: string;
-    public marca: string;
-    public img: string;
-    public preco: number;
-    public estoque: number;
-    public qtdPedidoProduto: number;
-    public categoria: Categoria;
-    public pedidos: Cliente[];
-    public listaDesejos: Cliente[];
+    public id: number| undefined;
+    public nome: string| undefined;
+    public img: string| undefined;
+    public estoque: number| undefined;
+    public qtdItemProduto: number| undefined;
+    public categoria: Categoria | undefined;
+    public itens: Usuario[] | undefined;
 
 }
