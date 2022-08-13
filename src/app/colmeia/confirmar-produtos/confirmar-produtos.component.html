@@ -1,1 +1,47 @@
-<p>confirmar-produtos works!</p>
+<title>Confirmar produtos</title>
+<link href="https://fonts.googleapis.com/css?family=Niramit&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="confirmar-produtos.component.css">
+
+<section class="titulos">
+    <ul>
+        <li><button type="button" class="seta-voltar"></button>
+        </li>
+        <li class="chamada-produtos"><b>PRODUTOS DISPONÍVEIS</b></li>
+        <li class="acesse">Produtos selecionados para retirada</li>
+    </ul>
+</section>
+
+<div class="produtos1">
+    <div class="produtos"><img src="../../../assets/imagens/arroz.png" />
+    </div>
+    <div class="produtos"><img src="../../../assets/imagens/macarrao.png" />
+    </div>
+    <div class="produtos"><img src="../../../assets/imagens/azeite.png" />
+    </div>
+    <div class="produtos"><img src="../../../assets/imagens/cafe.png" />
+    </div>
+</div>
+<div class="legendas1">
+    <ul>
+        <li>
+            <p class="legenda">Arroz <b>|</b><input type="checkbox" /></p>
+        </li>
+        <li>
+            <p class="legenda">Macarrão <b>|</b><input type="checkbox" /></p>
+        </li>
+        <li>
+            <p class="legenda">Azeite <b>|</b><input type="checkbox" /></p>
+        </li>
+        <li>
+            <p class="legenda">Café <b>|</b><input type="checkbox" /></p>
+        </li>
+    </ul>
+</div>
+
+<div class="botao">
+    <!--<a href="#"><button type="submit" class="botao-proximo">AGENDAR RETIRADA</button></a>-->
+    <input type="button" class="botao-proximo" onclick="alert('Pedido agendado para retirada com sucesso!')"
+        value="Agendar Retirada!">
+</div>
