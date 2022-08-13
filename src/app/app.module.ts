@@ -22,6 +22,7 @@ import { HeaderUsuariosComponent } from './header-usuarios/header-usuarios.compo
 import { CadastroBeneficiarioComponent } from './cadastro-beneficiario/cadastro-beneficiario.component';
 import { CadastroDoadorComponent } from './cadastro-doador/cadastro-doador.component';
 import { CadastroCdComponent } from './cadastro-cd/cadastro-cd.component';
+import { ColmeiaComponent } from './colmeia/colmeia.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { CadastroCdComponent } from './cadastro-cd/cadastro-cd.component';
     HeaderUsuariosComponent,
     CadastroBeneficiarioComponent,
     CadastroDoadorComponent,
-    CadastroCdComponent
+    CadastroCdComponent,
+    ColmeiaComponent
   ],
   imports: [
     BrowserModule,
