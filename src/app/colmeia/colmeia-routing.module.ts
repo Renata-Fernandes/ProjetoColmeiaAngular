@@ -5,10 +5,9 @@ import { CommonModule } from '@angular/common';
 import { ClienteLogin } from '../model/ClienteLogin';
 import { ColmeiaComponent } from './colmeia.component';
 import { HomeComponent } from './home/home.component';
-import { ProdutosBeneficiarioComponent } from './produtos-beneficiario/produtos-beneficiario.component';
-import { CadastroBeneficiarioComponent } from './cadastro-beneficiario/cadastro-beneficiario.component';
 import { SobreComponent } from '../sobre/sobre.component';
 import { ProdutosBeneficiariodModule } from './produtos-beneficiario/produtos-beneficiario.module';
+import { LoginBeneficiarioModule } from '../login-beneficiario/login-beneficiario.module';
 
 const routes: Routes = [
     {
@@ -17,7 +16,7 @@ const routes: Routes = [
             {path:'', redirectTo:'home', pathMatch:'full'},
             {path:'home', component: HomeComponent},
             {path:'produtos-beneficiario', loadChildren:()=> ProdutosBeneficiariodModule},
-            {path:'cadastro-beneficiario', component: CadastroBeneficiarioComponent},
+            {path:'login-beneficiario', loadChildren:()=> LoginBeneficiarioModule},
             {path:'sobre', component: SobreComponent},
 
         ]

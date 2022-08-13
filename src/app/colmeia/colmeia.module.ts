@@ -16,7 +16,7 @@ import { ColmeiaRoutingModule } from "./colmeia-routing.module";
         ColmeiaRoutingModule,
         
     ],
-    export:[
+    exports:[
         ColmeiaComponent,
     ]
 })
