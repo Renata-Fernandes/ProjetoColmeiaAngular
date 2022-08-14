@@ -22,6 +22,10 @@ import { HeaderUsuariosComponent } from './colmeia//header-usuarios/header-usuar
 import { CadastroBeneficiarioComponent } from './colmeia/cadastro-beneficiario/cadastro-beneficiario.component';
 import { CadastroDoadorComponent } from './colmeia/cadastro-doador/cadastro-doador.component';
 import { CadastroCdComponent } from './colmeia/cadastro-cd/cadastro-cd.component';
+import { CategoriaComponent } from './categoria/categoria.component';
+import { UsuarioComponent } from './usuario/usuario.component';
+import { DeletarCategoriaComponent } from './deletar-categoria/deletar-categoria.component';
+import { ProdutosComponent } from './produtos/produtos.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +49,10 @@ import { CadastroCdComponent } from './colmeia/cadastro-cd/cadastro-cd.component
     CadastroBeneficiarioComponent,
     CadastroDoadorComponent,
     CadastroCdComponent,
+    CategoriaComponent,
+    UsuarioComponent,
+    DeletarCategoriaComponent,
+    ProdutosComponent,
   ],
   imports: [
     BrowserModule,

@@ -67,4 +67,13 @@ export class ProdutoService {
     return this.http.delete<Produto>(`${this.endereco}/produtos/${id}`, this.autorizacao);
   }
 
+  removerProdutoDoCarrinho(idProduto: number, idPedido: number): Observable<Produto> {
+
+    return this.http.delete<Produto>(`${this.endereco}/produtos/produto_pedido/produtos/${idProduto}/pedidos/${idPedido}`, this.autorizacao);
+  }  
+
+  
+
+
+
 }

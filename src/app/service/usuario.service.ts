@@ -1,7 +1,6 @@
 import { UsuarioLogin } from '../model/UsuarioLogin';
 import { Usuario } from '../model/Usuario';
 import { Router } from '@angular/router';
-import { AlertasService } from './alertas.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -24,7 +23,7 @@ export class UsuarioService {
   constructor(
     private http: HttpClient,
     private router: Router,
-    private alertas: AlertasService
+    
 
   ) { }
 
@@ -83,7 +82,7 @@ export class UsuarioService {
     /* ARMAZENA O TOKEN DO USUARIO NO LOCAL STORAGE */
     localStorage.removeItem('token');
 
-    this.alertas.alertaMensagem('Logout realizado com sucesso!');
+    //this.alertas.alertaMensagem('Logout realizado com sucesso!');
 
     this.router.navigate(['/login']);
 
