@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './colmeia/home/home.component';
-import { HeaderComponent } from './colmeia/header/header.component';
 import { FooterComponent } from './colmeia/footer/footer.component';
 import { LoginBeneficiarioComponent } from './login-beneficiario/login-beneficiario.component';
 import { LoginDoadorComponent } from './login-doador/login-doador.component';
@@ -22,12 +21,12 @@ import { HeaderUsuariosComponent } from './colmeia//header-usuarios/header-usuar
 import { CadastroBeneficiarioComponent } from './colmeia/cadastro-beneficiario/cadastro-beneficiario.component';
 import { CadastroDoadorComponent } from './colmeia/cadastro-doador/cadastro-doador.component';
 import { CadastroCdComponent } from './colmeia/cadastro-cd/cadastro-cd.component';
+import { ColmeiaComponent } from './colmeia/colmeia.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent,
     FooterComponent,
     LoginBeneficiarioComponent,
     LoginDoadorComponent,
@@ -37,7 +36,6 @@ import { CadastroCdComponent } from './colmeia/cadastro-cd/cadastro-cd.component
     CadastreComponent,
     AreaDeAtuacaoComponent,
     BeneficiarioHomeComponent,
-    ProdutosBeneficiarioComponent,
     ConfirmarProdutosComponent,
     SelecionarDatasComponent,
     ConfirmacaoAgendamentoComponent,
@@ -45,6 +43,8 @@ import { CadastroCdComponent } from './colmeia/cadastro-cd/cadastro-cd.component
     CadastroBeneficiarioComponent,
     CadastroDoadorComponent,
     CadastroCdComponent,
+    ProdutosBeneficiarioComponent,
+    ColmeiaComponent
   ],
   imports: [
     BrowserModule,

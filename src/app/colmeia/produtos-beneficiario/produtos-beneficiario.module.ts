@@ -6,17 +6,12 @@ import { ProdutosBeneficiarioComponent } from './produtos-beneficiario.component
 
 
 @NgModule({
-    declarations: [
-        ProdutosBeneficiarioComponent,
-   
-    ],
+    declarations: [],
     imports: [
       CommonModule,
       ProdutosBeneficiarioRouting,
     ],
-    exports: [
-        ProdutosBeneficiarioComponent,
-    ]
+    exports: []
   })
   export class ProdutosBeneficiariodModule { }
   

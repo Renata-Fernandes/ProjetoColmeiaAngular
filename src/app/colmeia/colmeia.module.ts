@@ -8,16 +8,13 @@ import { ColmeiaRoutingModule } from "./colmeia-routing.module";
 
 @NgModule({
     declarations: [
-        ColmeiaComponent,
         
     ],
     imports:[
         CommonModule,
-        ColmeiaRoutingModule,
-        
+        ColmeiaRoutingModule
     ],
     exports:[
-        ColmeiaComponent,
     ]
 })
 export class  ColmeiaModule{}

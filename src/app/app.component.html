@@ -12,14 +12,17 @@
   
   
 </head>-->
+<!--
 
 
-<body>
+  <body>
   
     <div class=config-conteudo>
-      <a href="colmeia/home/home.component.html"><div class="abelha-gif"></div></a>
-      <a href="colmeia/home/home.component.html"><span class="texto">PROLIFERE O BEM</span></a>
+      <div class="abelha-gif"></div>
+      <a routerLink="home"><span class="texto">PROLIFERE O BEM</span></a>
     </div>   
-    
-</body>
+  -->
 
+    <router-outlet>
+      <app-colmeia></app-colmeia>
+    </router-outlet>
