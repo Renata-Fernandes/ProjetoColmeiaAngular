@@ -50,8 +50,8 @@
 	list-style: none;
 }
 .categorias{
-	padding-left: 150px;
-	padding-top: 370px;	
+	padding-left: 320px;
+	padding-top: 300px;	
 	text-align: justify;
 
 }
@@ -77,13 +77,14 @@
 	list-style: none;	
 	position:absolute;
 	top: 620px;
-	left: 50px;
+	left: 100px;
 }
 .caminho ul li{
 	list-style: none;		
 	display: inline-block;
 	text-align: center;
 	align-items: center;
+	padding-right: 5px;
 }
 .seta{
 	width: 25px;	
@@ -99,20 +100,20 @@
 .produtos {	
 	display: inline-block;
 	position: relative;
-	left: 270px
+	left: 300px
 }
 .produtos1 {
 	border-radius: 5px;
 	align-items: center;
-	margin-top: 250px;
+	margin-top: 200px;
 }
 .produtos1 div img {
 	border-radius: 5px;
-	width: 100px;
-	height: 100px;
+	width: 180px;
+	height: 180px;
 	align-items: center;
 	display: inline-block;
-	padding-left: 40px;
+	padding-left: 50px;
 	
 }
 .legenda {
@@ -124,7 +125,7 @@
 	display: inline-block;
 	list-style: none;
 	position: relative;
-	left: 270px;
+	left: 350px;
 }
 .legenda input {
 	width: 40px;	
@@ -137,7 +138,7 @@
 .legendas1 ul li {
 	list-style: none;
 	display: inline-block;
-	padding-right: 40px;	
+	padding-right: 130px;	
 	
 }
 .produtos2 {
@@ -148,11 +149,11 @@
 
 .produtos2 div img {
 	border-radius: 5px;
-	width: 100px;
-	height: 100px;
+	width: 180px;
+	height: 180px;
 	align-items: center;
 	display: inline-block;
-	padding-left: 40px;
+	padding-left: 50px;
 }
 
 .botao {
@@ -160,7 +161,7 @@
 	height: 212px;
 	position: absolute;
 	align-items: center;
-	top: 700px;
+	top: 900px;
 	text-align: center;
 
 }
@@ -170,7 +171,7 @@
 	width: 100px;
 	height: 35px;
 	position: absolute;
-	left: 600px;
+	left: 850px;
 	top: 550px;
 	font-family: Hind Siliguri;
 	text-align: center;

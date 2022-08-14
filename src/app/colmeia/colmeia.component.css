@@ -1,49 +1,57 @@
-* {
+*{
     margin: 0;
-    padding: 0;    
+    padding: 0; 
+    
 }
 a {
     text-decoration: none;
+    margin-top: -12px;
+    margin-left: 17px;
+    
 }
 .logo img {
     height: 100px;
     width: 100px;
     margin-right: 25px;
+    margin-top: 2px;
 }
 .name-tag {
     margin-left: 220px;
     text-align: center;
     margin-top: -100px;
     font-family:Hind Siliguri;
-    font-size:15px;
+    font-size:15px;    
 }
 /* ------------------------------------------------------------------------------------------------------------- */
 /* Header */
 .header {
-    display:block;
-    padding-left: 30px;
+    display:flexbox;
+    padding-left: 0px;
     align-items: center;   
-    position:absolute;
-    margin-top: 20px;
+    position:relative;
+    margin-top: 20px; 
+    background-color: rgba(245, 245, 245, 0.671);
+    height: 110px;   
+    box-shadow: 2px 2px 0px antiquewhite;
 
 }
 .nav-links li {
     list-style: none;
 }
 .nav-links ul {
-    display: flex;    
+    display:flex;    
 }
-.nav-links ul li {
+/*.nav-links ul li {
     margin-right: 0px;
-}
+}*/
 .nav-links ul li a {
-    font-size: 12px;    
+     
     display: flex;
     color: #4e3123;
     align-items: center;
     text-transform: uppercase;
     font-family:Hind Siliguri;
-    font-size:15px;
+    font-size:20px;
     letter-spacing: 0.15em;
 }
 .nav-links p:after {
@@ -74,7 +82,7 @@ a {
     height: 0%;
     align-items: center;
     margin-top: -100px;
-    width: 100px;
+    width: 150px;
     margin-left: -80px;
     font-family:Hind Siliguri;
     font-size:15px;    
