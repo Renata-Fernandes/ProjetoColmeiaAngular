@@ -1,98 +1,3 @@
-/*Cabeçalho*/
-
-* {
-    margin: 0;
-    padding: 0;    
-}
-a {
-    text-decoration: none;
-}
-.logo img {
-    height: 100px;
-    width: 100px;
-    margin-right: 25px;
-}
-.name-tag {
-    margin-left: 220px;
-    text-align: center;
-    margin-top: -100px;
-    font-family:Hind Siliguri;
-    font-size:15px;
-}
-/* ------------------------------------------------------------------------------------------------------------- */
-/* Header */
-.header {
-    display:block;
-    padding-left: 30px;
-    align-items: center;   
-    position:absolute;
-    margin-top: 20px;
-
-}
-.nav-links li {
-    list-style: none;
-}
-.nav-links ul {
-    display: flex;    
-}
-.nav-links ul li {
-    margin-right: 0px;
-}
-.nav-links ul li a {
-    font-size: 12px;    
-    display: flex;
-    color: #4e3123;
-    align-items: center;
-    text-transform: uppercase;
-    font-family:Hind Siliguri;
-    font-size:15px;
-    letter-spacing: 0.15em;
-}
-.nav-links p:after {
-    bottom: -5px;    
-    content: "";
-    display: block;
-    border-radius: 10px;
-    height: 2px;
-    left: 0;
-    position: relative;
-    background: #fdb018;
-    transition: 0.2s ease 0s, left 0.2s ease 0s;
-    width: 0;
-    opacity: 0;
-}
-.nav-links a:hover p:after {
-    opacity: 1;
-    width: 100%;
-    left: 0;
-}
-/* ------------------------------------------------------------------------------------------------------------- */
-/* Botão cadastre-se*/
-.cadastre {
-    position:static;
-    display:block;
-    right: 100px;
-    margin: 0;
-    height: 0%;
-    align-items: center;
-    margin-top: -100px;
-    width: 100px;
-    margin-left: -80px;
-    font-family:Hind Siliguri;
-    font-size:15px;    
-} 
-.cadastre:hover {
-    display:block;
-}
-.nav-links li button{
-    box-shadow:8px 8px 30px rgba(255,250,250);
-	background-color:rgba(232, 216, 183, 0.79);
-    border-top-left-radius:12px;
-	border-top-right-radius:12px;
-	border-bottom-left-radius:12px;
-	border-bottom-right-radius:12px;
-    border:1px solid rgba(253.0000001192093, 176.00000470876694, 24.000000469386578, 1)
-}
 
 /* texto chamada */
 
@@ -100,20 +5,15 @@ a {
 	width:700px;
 	height:400px;
 	position:absolute;
-	left:80px;
+	left:230px;
 	top:237px;
 }
-.ei205_2399_46_177 { 
-	height:311px;
-	position:absolute;
-	left:0px;
-	top:0px;
-}
+
 .espacamento-imagem { 
 	width:372px;
 	height:211px;
 	position:absolute;
-	left:0px;
+	left:20px;
 	top:0px;
 }
 .chamada { 
@@ -161,18 +61,12 @@ a {
 	letter-spacing:0;
 	line-height:px;
 }
-.ei205_2399_46_177_46_173 { 	
-	height:38.81261444091797px;
-	position:absolute;
-	left:90px;
-	top:4px;
-	align-items: center;
-}
+
 .seta-rosa { 	
 	width:80px;
 	height:30px;
 	position:absolute;
-	left:-10px;
+	left:80px;
 	top: 0px;
 	align-items: center;
 }
@@ -181,8 +75,7 @@ a {
 	width:445px;
 	height:254px;
 	position:absolute;
-	left:640px;
-	/*top:58.5px;*/
+	left:740px;	
 	align-items:baseline;
 	background-image:url(../../../assets/imagens/rectangle_4.png);
 	background-repeat:no-repeat;
@@ -196,7 +89,7 @@ a {
 	
 	height:576px;
 	position:absolute;
-	left:396px;
+	left:500px;
 	top:628px;
 }
 .imagem-fundo { 
@@ -227,8 +120,8 @@ a {
 .e205_2403 { 	
 	height:10px;
 	position:absolute;
-	left:0px;	
-	margin-top: 1150px;
+	left:160px;	
+	margin-top: 1000px;
 }
 .passo-a-passo { 
 	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
@@ -243,10 +136,10 @@ a {
 	letter-spacing:0;	
 }
 .fluxo{
-	width:850px;
+	width:950px;
 	height:600px;
 	position:absolute;	
-	left:150px;
+	left:250px;
 	top:-70px;	
 	display: block;	
 	margin-bottom: auto;
@@ -255,39 +148,20 @@ a {
 /*Descritivo de como doar*/
 
 .espacamento-para-doar { 
-	width:800px;
+	width:700px;
 	height:800px;
 	position:absolute;
-	left:-28px;
+	left:150px;
 	top:1584px;	
 	text-align: justify;
 }
-.ei205_2422_46_315 { 
-	width:800px;
-	height:632px;
-	position:absolute;
-	left:0px;
-	top:0px;
-}
+
+/*espaçamento sobre como doar*/
 .ei205_2422_46_315_46_313 { 
-	width:800px;
+	width:700px;
 	height:616px;
 	position:absolute;
 	left:80px;
-	top:8px;
-}
-.ei205_2422_46_315_46_312 { 
-	width:800px;
-	height:616px;
-	position:absolute;
-	left:0px;
-	top:0px;
-}
-.ei205_2422_46_315_46_310 { 
-	width:800px;
-	height:60px;
-	position:absolute;
-	left:0px;
 	top:0px;
 }
 .ei205_2422_46_315_46_306 { 
@@ -336,14 +210,6 @@ a {
 	left:10px;
 	top:10px;
 }
-.ei205_2422_46_315_46_302 { 
-	width:163px;
-	height:0px;
-	position:absolute;
-	left:0.5018081665039062px;
-	top:5px;
-	
-}
 .como-doar { 
 	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
 	width:590px;
@@ -359,7 +225,7 @@ a {
 	width:484px;
 	height:354px;
 	position:absolute;
-	left:700px;
+	left:750px;
 	top:53px;
 	background-repeat:no-repeat;
 	background-size:cover;	
@@ -371,12 +237,12 @@ a {
 .alinhamento-produtos { 	
 	height:375px;
 	position:absolute;
-	left:-20px;
+	left:150px;
 	top:2090px;
 }
 .e205_2424 { 
 	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
-	width:418px;
+	width:208px;
 	height:35px;
 	position:absolute;
 	left:88px;
@@ -387,7 +253,7 @@ a {
 	letter-spacing:0;
 }
 .sombra-produtos { 	
-	width:800px;
+	width:700px;
 	height:100px;
 	position:absolute;
 	left:80px;
@@ -402,8 +268,7 @@ a {
     margin: 15px;   
     text-align: center;    
 }
-.pic-ctn {
-  width: 100vw;
+.pic-ctn {  
   height: 200px;
   object-fit: fill;
   display: flex;  
@@ -431,8 +296,7 @@ a {
   }
 }
 .pic-ctn {
-  position: relative;
-  width: 100vw;
+  position: relative; 
   height: 300px;
   margin-top: 15vh;
 }
@@ -462,7 +326,7 @@ img:nth-child(5) {
 	width:800px;
 	height:335px;
 	position:absolute;
-	left:0px;
+	left:150px;
 	top:2400px;
 }
 .e205_2431 a{
@@ -488,18 +352,22 @@ img:nth-child(5) {
 .mapa { 	
 	position:absolute;
 	left: 160px;
-	top: 150px;		
+	top: 200px;		
 }
 
 /*rodapé*/
 
-.footer {
+/*.footer {
     display:flexbox;
     padding-left: 30px;
     align-items: center;
     position:absolute;
     margin-top: 3200px;    
     font-family:Hind Siliguri;
+	background-color: rgba(245, 245, 245, 0.671);
+    height: 190px;  
+	width: auto;
+    box-shadow: 2px 2px 0px antiquewhite;
 }
 .direitos{
     color: #4e3123;
@@ -507,7 +375,7 @@ img:nth-child(5) {
     font-family:Hind Siliguri;
     font-size:8px;
     text-align: center;
-    margin-left: 2px;
+    margin-left: -41px;
     margin-top: -35px;
 }
 .direitos a{
@@ -562,5 +430,5 @@ img:nth-child(5) {
     text-align: center;  
     margin-left: 150px;
     margin-top: -90px;   
-}
+}*/
 
