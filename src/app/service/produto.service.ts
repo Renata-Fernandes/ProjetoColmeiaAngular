@@ -13,7 +13,8 @@ export class ProdutoService {
 
   autorizacao = {
     //headers: new HttpHeaders().set('Authorization', environment.token)
-    headers: new HttpHeaders().set('Authorization', localStorage.getItem('token') || '')
+    headers: new HttpHeaders()
+    .set('Authorization', 'Basic dGVzdGVAZ21haWwuY29tOjEyMzQ1Njc4' || '')
 
   }
 
