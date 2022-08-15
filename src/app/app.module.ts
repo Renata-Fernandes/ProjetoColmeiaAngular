@@ -22,6 +22,7 @@ import { CadastroBeneficiarioComponent } from './colmeia/cadastro-beneficiario/c
 import { CadastroDoadorComponent } from './colmeia/cadastro-doador/cadastro-doador.component';
 import { CadastroCdComponent } from './colmeia/cadastro-cd/cadastro-cd.component';
 import { ColmeiaComponent } from './colmeia/colmeia.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -48,9 +49,10 @@ import { ColmeiaComponent } from './colmeia/colmeia.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
