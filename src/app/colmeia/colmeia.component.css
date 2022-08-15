@@ -17,6 +17,10 @@ a {
     font-family:Hind Siliguri;
     font-size:15px;
 }
+.usuario{
+    font-size: small;
+    color: lightgray;
+}
 /* ------------------------------------------------------------------------------------------------------------- */
 /* Header */
 .header {

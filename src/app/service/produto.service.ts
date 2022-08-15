@@ -14,7 +14,7 @@ export class ProdutoService {
   autorizacao = {
     //headers: new HttpHeaders().set('Authorization', environment.token)
     headers: new HttpHeaders()
-    .set('Authorization', 'Basic dGVzdGVAZ21haWwuY29tOjEyMzQ1Njc4' || '')
+    .set('Authorization', 'Basic dXNlckBnbWFpbC5jb206dXN1YXJpbzEyMw==' || '')
 
   }
 

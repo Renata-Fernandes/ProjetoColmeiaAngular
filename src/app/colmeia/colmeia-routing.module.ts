@@ -17,7 +17,7 @@ const routes: Routes = [
             {path:'home', component: HomeComponent},
             {path:'produtos-beneficiario', loadChildren:()=> ProdutosBeneficiariodModule},
             {path:'login-beneficiario', loadChildren:()=> LoginBeneficiarioModule},
-            {path:'sobre', component: SobreComponent},
+            {path:'sobre', loadChildren:()=>SobreComponent},
 
         ]
 

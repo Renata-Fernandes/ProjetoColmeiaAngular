@@ -9,6 +9,16 @@
 .titulos ul li{
 	list-style: none;
 }
+tr{/** Faz o estilo para as linhas. **/
+	text-align: center; /** Centraliza o conteúdo. **/
+ }
+ th{/** Faz o estilo para as células do cabeçalho. **/
+	background: #666; /** Muda para um fundo cinza. **/
+	color: white; /** Troca a cor da fonte para branco. **/
+	text-align: center;
+	
+ }
+
 .seta-voltar { 
 	width:32px;
 	height:32px;
