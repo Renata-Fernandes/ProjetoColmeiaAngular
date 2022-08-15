@@ -24,7 +24,6 @@ export class UsuarioService {
   constructor(
     private http: HttpClient,
     private router: Router,
-    private alertas: AlertasService
 
   ) { }
 
