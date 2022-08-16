@@ -12,12 +12,12 @@
 tr{/** Faz o estilo para as linhas. **/
 	text-align: center; /** Centraliza o conteúdo. **/
  }
- th{/** Faz o estilo para as células do cabeçalho. **/
-	background: #666; /** Muda para um fundo cinza. **/
-	color: white; /** Troca a cor da fonte para branco. **/
-	text-align: center;
+/* th{/** Faz o estilo para as células do cabeçalho. **/
+	/*background: #666; /** Muda para um fundo cinza. **/
+	/*color: white; /** Troca a cor da fonte para branco. **/
+	/*text-align: center;
 	
- }
+ }*/
 
 .seta-voltar { 
 	width:32px;
@@ -63,6 +63,7 @@ tr{/** Faz o estilo para as linhas. **/
 	padding-left: 320px;
 	padding-top: 300px;	
 	text-align: justify;
+	align-items: center;
 
 }
 .colunas{
@@ -72,11 +73,24 @@ tr{/** Faz o estilo para as linhas. **/
 	letter-spacing: 1px;
 	list-style: none;	
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 10px -15px;
-	padding-right: 80px;		
+	padding-right: 80px;
+		
 }
 .colunas tr td{	
 	padding-left: 90px;
 	
+}
+.colunas th{
+	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
+	font-family: Niramit;
+	font-size: 16px;
+	letter-spacing: 1px;
+	background-color: rgba(232, 216, 183, 0.79);
+	border-color: rgba(253.0000001192093, 176.00000470876694, 24.000000469386578, 1);
+	text-align: center;
+	align-items: center;
+	padding-right: 20px;
+	padding-left:20px;
 }
 .caminho{
 	

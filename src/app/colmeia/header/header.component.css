@@ -1,4 +1,4 @@
-* {
+/** {
     margin: 0;
     padding: 0;    
 }
@@ -19,7 +19,7 @@ a {
 }
 /* ------------------------------------------------------------------------------------------------------------- */
 /* Header */
-.header {
+/*.header {
     display:block;
     padding-left: 30px;
     align-items: center;   
@@ -63,10 +63,10 @@ a {
     opacity: 1;
     width: 100%;
     left: 0;
-}
+}*/
 /* ------------------------------------------------------------------------------------------------------------- */
 /* Botão cadastre-se*/
-.cadastre {
+/*.cadastre {
     position:static;
     display:block;
     right: 100px;
@@ -90,4 +90,4 @@ a {
 	border-bottom-left-radius:12px;
 	border-bottom-right-radius:12px;
     border:1px solid rgba(253.0000001192093, 176.00000470876694, 24.000000469386578, 1)
-}
+}*/
