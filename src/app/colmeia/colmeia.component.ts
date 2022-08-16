@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Usuario } from '../model/Usuario';
 
 @Component({
   selector: 'app-colmeia',
@@ -8,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class ColmeiaComponent implements OnInit {
 
   constructor() { }
-
+  usuario: Usuario={
+    id:0,
+    cpf: "",
+    itens:[],
+    nome:"",
+    senha:"",
+    tipoUsuario:"",
+    usuario:""
+  }
   ngOnInit(): void {
   }
 

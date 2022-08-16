@@ -26,6 +26,7 @@ import { ColmeiaComponent } from './colmeia/colmeia.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,7 +55,9 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    
+
   ],
   providers: [HttpClient],
   bootstrap: [AppComponent]

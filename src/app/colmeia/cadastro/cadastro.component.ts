@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Usuario } from 'src/app/model/Usuario';
 import { UsuarioService } from 'src/app/service/usuario.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-cadastro',
@@ -55,7 +56,7 @@ export class CadastroComponent implements OnInit {
         this.usuario = resp;
 
 
-        this.router.navigate(['/login']);
+     
 
       })
     }

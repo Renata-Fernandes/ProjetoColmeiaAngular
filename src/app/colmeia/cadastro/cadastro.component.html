@@ -10,11 +10,11 @@
         <div id="msgSucesso"></div>
 
         <div class="label-float">
-            <input *[(ngModel)]='usuario.nome' type="text" id="nome" placeholder="Nome" required>
+            <input ngModel='usuario.nome' type="text" id="nome" placeholder="Nome" required>
         </div>
 
         <div class="label-float">
-            <input type="text" *[(ngModel)]='usuario.usuario'  id="usuario" placeholder="Usuário" required>
+            <input type="text" ngModel='usuario.usuario'  id="usuario" placeholder="Usuário" required>
         </div>
 
 
@@ -26,7 +26,7 @@
         </div>
 
         <div class="label-float">
-            <input *[(ngModel)]='usuario.senha' type="password" id="confirmasenha" placeholder="Confirmar Senha" required>
+            <input ngModel='usuario.senha' type="password" id="confirmasenha" placeholder="Confirmar Senha" required>
         </div>
 
         <div class="label-float">

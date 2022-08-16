@@ -11,9 +11,9 @@ import { ProdutoService } from 'src/app/service/produto.service';
 export class ProdutosBeneficiarioComponent implements OnInit {
   private produtoService: ProdutoService;
   public produtos = {} as  Produto[];
-
+  public qtdProdutoSolicitado!: number;
   prod = {
-    id:0,
+      id:0,
       nome: "",
       qtdItem: 0,
       estoque:0,
@@ -34,7 +34,16 @@ export class ProdutosBeneficiarioComponent implements OnInit {
   ngOnInit(): void {
     this.listarProduto();
   }
-
+  adicionarProd(produto: any){
+    // passar o valor do qtdprodsolic para item
+   // const qtdProd=document.getElementById('qtdProd').qtdProd.value;
+    produto.qtdItem =  this.qtdProdutoSolicitado; 
+    produto.estoque-= this.qtdProdutoSolicitado;
+    this.produtoService.putProduto(produto).subscribe(()=>{
+      this.listarProduto();
+      alert("adicionado c sucesso")
+    })
+  }
   listarProduto(){
     const listProdutos: Produto[] = [];
         this.produtoService.findAllByProdutos().subscribe(datas =>{
@@ -58,9 +67,12 @@ export class ProdutosBeneficiarioComponent implements OnInit {
     })
   }
 
-  onSubmit(){
-    this.produtoService.deleteProduto( this.prod.id)
+  deletar(produto:Produto){
+    this.produtoService.deleteProduto(produto.id).subscribe(()=>{
+      this.listarProduto();
+      alert("deletado c sucesso")
+    })
 
   }
-}
+ }
 

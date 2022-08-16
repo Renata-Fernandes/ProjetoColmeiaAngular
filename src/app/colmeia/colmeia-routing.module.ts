@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { UsuarioLogin } from '../model/UsuarioLogin';
 import { ColmeiaComponent } from './colmeia.component';
 import { HomeComponent } from './home/home.component';
-import { SobreComponent } from '../sobre/sobre.component';
+import { SobreComponent } from './sobre/sobre.component';
 import { ProdutosBeneficiariodModule } from './produtos-beneficiario/produtos-beneficiario.module';
 import { LoginBeneficiarioModule } from '../login-beneficiario/login-beneficiario.module';
 import { CadastroComponent } from './cadastro/cadastro.component';
