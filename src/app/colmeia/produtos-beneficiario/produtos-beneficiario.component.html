@@ -21,17 +21,17 @@
         <th>Estoque</th>
         <th>Categoria</th>
         <th>imagem</th>
-        <th class = "quantidade"> quantidade maxima por beneficiario: 4 </th>
+        <th class="quantidade"> quantidade maxima por beneficiario: 4 </th>
       </tr>
     </thead>
     <tbody>
-      <tr  *ngFor="let produto of produtos">
+      <tr *ngFor="let produto of produtos">
         <td>{{produto.nome}}</td>
         <td>{{produto.estoque}}</td>
         <td>{{produto.categoria.nome}}</td>
-        <td><img src="{{produto.img}}" width="200px"/></td>
-        <td><input type='number' value='' min='0' max='4'/></td>
-        
+        <td><img src="{{produto.img}}" width="200px" /></td>
+        <td><input type='number' value='' min='0' max='4' /></td>
+
       </tr>
     </tbody>
 
@@ -39,11 +39,39 @@
 
 </section>
 
-<!--<div  class="caminho">
-  <ul>
-    <li>Produtos</li>
-    <li><button class="seta"></button></li>
-    <li>Alimentos</li>
-  </ul>
-</div>-->
+<div class="botao">
+  <!--<a href="#"><button type="submit" class="botao-proximo">AGENDAR RETIRADA</button></a>-->
+  <input type="button" class="botao-proximo" onclick="alert('Pedido agendado para retirada com sucesso!')"
+      value="Agendar Retirada!">
+</div>
+
+<footer class="footer">
+  <a href="" class="logo">
+    <img src="../../assets/imagens/logo_projetocolmeia.png" alt="logo">
+  </a>
+  <nav class="footer-links">
+    <ul>
+      <li>
+        <p class="direitos">Copyright ©
+          <br>
+          2022 Vênus
+          <br>
+          Todos os direitos reservados.
+        </p>
+      </li>
+      <li><a routerLink="/sobre">
+          <p class="sobre">SOBRE</p><br>
+        </a>
+        <a routerLink="/termosecondicoes">
+          <p class="termos">TERMOS E CONDIÇÕES</p>
+        </a>
+      </li>
+      <li><a href="../contato/contato.component.html">
+          <p class="contato ">CONTATO</p>
+        </a></li>
+    </ul>
+  </nav>
+</footer>
+<div>
+
 

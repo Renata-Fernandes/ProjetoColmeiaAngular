@@ -90,7 +90,7 @@
 	height:576px;
 	position:absolute;
 	left:500px;
-	top:628px;
+	top: 1790px;
 }
 .imagem-fundo { 
 	width:300px;
@@ -120,8 +120,8 @@
 .e205_2403 { 	
 	height:10px;
 	position:absolute;
-	left:160px;	
-	margin-top: 1000px;
+	left:180px;	
+	margin-top: 550px;
 }
 .passo-a-passo { 
 	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
@@ -136,11 +136,11 @@
 	letter-spacing:0;	
 }
 .fluxo{
-	width:950px;
-	height:600px;
+	width:850px;
+	height:290px;
 	position:absolute;	
 	left:250px;
-	top:-70px;	
+	top:150px;	
 	display: block;	
 	margin-bottom: auto;
 }
@@ -152,7 +152,7 @@
 	height:800px;
 	position:absolute;
 	left:150px;
-	top:1584px;	
+	top:1200px;	
 	text-align: justify;
 }
 
@@ -222,17 +222,17 @@
 	letter-spacing:0;
 }
 .imagem-latas { 
-	width:484px;
-	height:354px;
+	width:400px;
+	height:294px;
 	position:absolute;
 	left:750px;
-	top:53px;
+	top:35px;
 	background-repeat:no-repeat;
 	background-size:cover;	
 	animation: display 2s normal;
 }
 
-/*produtos*/
+/*produtos
 
 .alinhamento-produtos { 	
 	height:375px;
@@ -318,7 +318,7 @@ img:nth-child(4) {
 }
 img:nth-child(5) {
   animation-delay: 4s;
-}
+}*/
 
 /*área de atuação*/
 
@@ -327,7 +327,7 @@ img:nth-child(5) {
 	height:335px;
 	position:absolute;
 	left:150px;
-	top:2400px;
+	top:2300px;
 }
 .e205_2431 a{
 	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
@@ -357,7 +357,7 @@ img:nth-child(5) {
 
 /*rodapé*/
 
-/*.footer {
+.footer {
     display:flexbox;
     padding-left: 30px;
     align-items: center;
@@ -366,7 +366,7 @@ img:nth-child(5) {
     font-family:Hind Siliguri;
 	background-color: rgba(245, 245, 245, 0.671);
     height: 190px;  
-	width: auto;
+	width: 1640px;
     box-shadow: 2px 2px 0px antiquewhite;
 }
 .direitos{
@@ -375,7 +375,7 @@ img:nth-child(5) {
     font-family:Hind Siliguri;
     font-size:8px;
     text-align: center;
-    margin-left: -41px;
+    margin-left: -25px;
     margin-top: -35px;
 }
 .direitos a{
@@ -406,7 +406,7 @@ img:nth-child(5) {
 }
 .footer-links ul li a {
     margin-right: 30px;
-    margin-left: 180px;
+    margin-left: 350px;
     margin-top: 20px;
     display: flex;
     color: #4e3123;    
@@ -430,5 +430,16 @@ img:nth-child(5) {
     text-align: center;  
     margin-left: 150px;
     margin-top: -90px;   
-}*/
-
+}
+.logo img {
+    height: 100px;
+    width: 100px;
+    margin-right: 25px;
+    margin-top: 2px;
+}
+a {
+    text-decoration: none;
+    margin-top: -12px;
+    margin-left: 17px;
+    
+}

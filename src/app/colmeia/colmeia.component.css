@@ -5,8 +5,8 @@
 }
 a {
     text-decoration: none;
-    margin-top: -12px;
-    margin-left: 17px;
+    margin-top: 0px;
+    margin-left: 20px;
     
 }
 .logo img {
@@ -16,7 +16,7 @@ a {
     margin-top: 2px;
 }
 .name-tag {
-    margin-left: 220px;
+    margin-left: 300px;
     text-align: center;
     margin-top: -100px;
     font-family:Hind Siliguri;
@@ -45,9 +45,9 @@ a {
 .nav-links ul {
     display:flex;    
 }
-/*.nav-links ul li {
+.nav-links ul li {
     margin-right: 0px;
-}*/
+}
 .nav-links ul li a {
      
     display: flex;
@@ -61,7 +61,7 @@ a {
 .nav-links p:after {
     bottom: -5px;    
     content: "";
-    display: block;
+    display: inline-block;
     border-radius: 10px;
     height: 2px;
     left: 0;
@@ -103,3 +103,53 @@ a {
 	border-bottom-right-radius:12px;
     border:1px solid rgba(253.0000001192093, 176.00000470876694, 24.000000469386578, 1)
 }
+
+  /* Profile */
+  .login {    
+    display:block;
+    right: 0;   
+    height: 0%;   
+    margin-top: 210px;
+    color:  #4e3123;
+    font-family: Hind Siliguri;
+    font-size:15px;    
+    align-items: center;    
+    margin-left: 100px;
+    letter-spacing: 0.15em;
+    
+  }
+  .sair {
+    list-style: none;
+    margin-left: 140px;
+    margin-top: -20px;
+  }
+ 
+ 
+  .login {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+   left: 1350px;
+   top: -420px;
+   color:  #4e3123;
+    font-family: Hind Siliguri;
+    font-size:15px;  
+  }
+  
+  .usuario-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 12px;
+    z-index: 1;
+    color:  #4e3123;   
+    text-decoration: none;  
+  }
+  
+  .login:hover .usuario-dropdown {
+    display: block;
+    text-decoration: none;
+    color:  #4e3123;  
+  }
