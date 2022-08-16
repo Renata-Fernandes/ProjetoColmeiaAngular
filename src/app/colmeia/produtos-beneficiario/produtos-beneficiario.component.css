@@ -11,15 +11,23 @@
 }
 tr{/** Faz o estilo para as linhas. **/
 	text-align: center; /** Centraliza o conteúdo. **/
+	padding-bottom: 10px;
  }
  th{/** Faz o estilo para as células do cabeçalho. **/
-	background: #666; /** Muda para um fundo cinza. **/
-	color: white; /** Troca a cor da fonte para branco. **/
+	background: rgb(216, 215, 214);
+	color: rgb(12, 12, 6); /** Troca a cor da fonte para branco. **/
 	text-align: center;
 	
  }
-
-.seta-voltar { 
+.aviso{
+	background-color: lemonchiffon;
+	text-decoration: dotted;
+	
+}
+.btn:hover{
+	background-color:  lemonchiffon;
+}
+/*.seta-voltar { 
 	width:32px;
 	height:32px;
 	position:absolute;
@@ -31,7 +39,7 @@ tr{/** Faz o estilo para as linhas. **/
 	list-style: none;
 	background-color: white;
 	border-color: white;
-}
+}*/
 .chamada-produtos { 
 	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
 	width:306px;

@@ -1,13 +1,15 @@
 <title>Produtos disponíveis</title>
 <link href="https://fonts.googleapis.com/css?family=Niramit&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
 <link rel="stylesheet" href="produtos-beneficiario.component.css">
 
 <section class="titulos">
   <ul>
-    <li><button type="button" class="seta-voltar"></button>
-    </li>
+    <!-- <li><button type="button" class="seta-voltar"></button>
+    </li> -->
     <li class="chamada-produtos"><b>PRODUTOS DISPONÍVEIS</b></li>
     <li class="acesse">Acesse por categoria</li>
   </ul>
@@ -20,30 +22,25 @@
         <th>Nome Produto</th>
         <th>Estoque</th>
         <th>Categoria</th>
-        <th>imagem</th>
-        <th class = "quantidade"> quantidade maxima por beneficiario: 4 </th>
+        <th>Imagem</th>
+        <th > Quantidade </th>
       </tr>
     </thead>
     <tbody>
+       <td class ="aviso" colspan ="5" style="text-align: center">A quantidade máxima de um mesmo item por beneficiário é de 4 unidades </td>
       <tr  *ngFor="let produto of produtos">
         <td>{{produto.nome}}</td>
         <td>{{produto.estoque}}</td>
         <td>{{produto.categoria.nome}}</td>
         <td><img src="{{produto.img}}" width="200px"/></td>
         <td><input type='number' value='' min='0' max='4'/></td>
-        
+        <a class="btn botao-editar" data-bs-toggle="modal" data-bs-target="#putProduto" (click)='findByIdProduto(produto.id)' >Editar</a>
       </tr>
     </tbody>
 
   </table>
+   <br/> <button type="button" class="btn btn-warning"> Solicitar </button>
 
 </section>
 
-<!--<div  class="caminho">
-  <ul>
-    <li>Produtos</li>
-    <li><button class="seta"></button></li>
-    <li>Alimentos</li>
-  </ul>
-</div>-->
 

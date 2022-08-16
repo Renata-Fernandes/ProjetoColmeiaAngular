@@ -36,7 +36,6 @@ export class ProdutosBeneficiarioComponent implements OnInit {
 
   listarProduto(){
     const listProdutos: Produto[] = [];
-    let i=0;
     this.produtoService.findAllByProdutos().subscribe(datas =>{
       datas.forEach(x => {
         this.prod = {
@@ -51,14 +50,55 @@ export class ProdutosBeneficiarioComponent implements OnInit {
           
         }
         listProdutos.push(this.prod)
-        i++;
+     
       })
       this.produtos = listProdutos;
-      let div = i/3;
     })
   }
 
   adicionarProduto(produto:any){
+
+  }
+  /* TRAZ SOMENTE UM UNICO PRODUTO POR MEIO DE SEUS ID */
+  findByIdProduto(id: number) {
+    this.produtoService.findByIdProduto(id).subscribe((resp: Produto) => {
+      this.prod = resp;
+
+    })
+
+  }
+   /* TRAZ TODOS OS PRODUTOS CADASTRADOS NA BASE DE DADOS */
+   findAllByProdutos() {
+    this.produtoService.findAllByProdutos().subscribe((resp: Produto[]) => {
+      this.produtos = resp;
+
+    })
+
+  }
+
+  /* ATUALIZA UM PRODUTO JA EXISTENTE NA BASE DE DADOS */
+  putProduto(estoque: any ) {
+    
+    this.prod.estoque= estoque;
+    
+
+    this.produtoService.putProduto(this.prod).subscribe((resp: Produto) => {
+      this.prod = resp;
+
+
+      this.prod = new Produto();
+      this.findAllByProdutos();
+
+    }, erro => {
+      if(erro.status == 500) {
+        console.log(`Erro: ${erro.status}, algum dado esta sendo inserido incorretamente.`)
+
+      }else if(erro.status >= 400 && erro.status < 500){
+        console.log(`Erro: ${erro.status}, acesso nao autorizado, verifique seu login.`)
+
+      }
+
+    })
 
   }
 }
