@@ -13,6 +13,7 @@ export class ProdutosBeneficiarioComponent implements OnInit {
   public produtos = {} as  Produto[];
 
   prod = {
+    id:0,
       nome: "",
       qtdItem: 0,
       estoque:0,
@@ -36,10 +37,10 @@ export class ProdutosBeneficiarioComponent implements OnInit {
 
   listarProduto(){
     const listProdutos: Produto[] = [];
-    let i=0;
-    this.produtoService.findAllByProdutos().subscribe(datas =>{
+        this.produtoService.findAllByProdutos().subscribe(datas =>{
       datas.forEach(x => {
         this.prod = {
+          id:x.id,
           nome: x.nome,
           qtdItem: x.qtdItemProduto,
           estoque: x.estoque,
@@ -51,14 +52,14 @@ export class ProdutosBeneficiarioComponent implements OnInit {
           
         }
         listProdutos.push(this.prod)
-        i++;
       })
       this.produtos = listProdutos;
-      let div = i/3;
+ 
     })
   }
 
-  adicionarProduto(produto:any){
+  onSubmit(){
+    this.produtoService.deleteProduto( this.prod.id)
 
   }
 }

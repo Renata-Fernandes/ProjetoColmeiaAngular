@@ -7,10 +7,11 @@ import { HomeComponent } from './colmeia/home/home.component';
 import { FooterComponent } from './colmeia/footer/footer.component';
 import { LoginBeneficiarioComponent } from './login-beneficiario/login-beneficiario.component';
 import { LoginDoadorComponent } from './login-doador/login-doador.component';
-import { SobreComponent } from './sobre/sobre.component';
+import { SobreComponent } from './colmeia/sobre/sobre.component';
 import { TermosComponent } from './termos/termos.component';
 import { ContatoComponent } from './colmeia/contato/contato.component';
 import { CadastreComponent } from './colmeia/cadastre/cadastre.component';
+import { CadastroComponent } from './colmeia/cadastro/cadastro.component';
 import { AreaDeAtuacaoComponent } from './colmeia/area-de-atuacao/area-de-atuacao.component';
 import { BeneficiarioHomeComponent } from './colmeia/beneficiario-home/beneficiario-home.component';
 import { ProdutosBeneficiarioComponent } from './colmeia/produtos-beneficiario/produtos-beneficiario.component';
@@ -23,10 +24,12 @@ import { CadastroDoadorComponent } from './colmeia/cadastro-doador/cadastro-doad
 import { CadastroCdComponent } from './colmeia/cadastro-cd/cadastro-cd.component';
 import { ColmeiaComponent } from './colmeia/colmeia.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
+    CadastreComponent,
     HomeComponent,
     FooterComponent,
     LoginBeneficiarioComponent,
@@ -50,7 +53,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [HttpClient],
   bootstrap: [AppComponent]

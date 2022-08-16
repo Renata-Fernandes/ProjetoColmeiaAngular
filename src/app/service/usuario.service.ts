@@ -1,7 +1,6 @@
 import { UsuarioLogin } from '../model/UsuarioLogin';
 import { Usuario } from '../model/Usuario';
 import { Router } from '@angular/router';
-import { AlertasService } from './alertas.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -17,7 +16,7 @@ export class UsuarioService {
 
   autorizacao = {
     //headers: new HttpHeaders().set('Authorization', environment.token)
-    headers: new HttpHeaders().set('Authorization', localStorage.getItem('token') || '')
+    headers: new HttpHeaders().set('Authorization', 'Basic dXNlckBnbWFpbC5jb206dXN1YXJpbzEyMw==' || '')
 
   }
 
@@ -28,7 +27,7 @@ export class UsuarioService {
   ) { }
 
   /* PESQUISA UM USUARIO POR ID */
-  findByIdCliente(id: number): Observable<Usuario> {
+  findByIdUsuario(id: number): Observable<Usuario> {
 
     return this.http.get<Usuario>(`${this.api}/usuarios/${id}`, this.autorizacao);
   }
@@ -82,7 +81,6 @@ export class UsuarioService {
     /* ARMAZENA O TOKEN DO USUARIO NO LOCAL STORAGE */
     localStorage.removeItem('token');
 
-    this.alertas.alertaMensagem('Logout realizado com sucesso!');
 
     this.router.navigate(['/login']);
 

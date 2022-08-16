@@ -31,7 +31,7 @@
         <td>{{produto.categoria.nome}}</td>
         <td><img src="{{produto.img}}" width="200px" /></td>
         <td><input type='number' value='' min='0' max='4' /></td>
-
+       <!-- <td> <button type="submit" class="botao-proximo">Deletar</button></td>-->
       </tr>
     </tbody>
 
@@ -42,7 +42,8 @@
 <div class="botao">
   <!--<a href="#"><button type="submit" class="botao-proximo">AGENDAR RETIRADA</button></a>-->
   <input type="button" class="botao-proximo" onclick="alert('Pedido agendado para retirada com sucesso!')"
-      value="Agendar Retirada!">
+      value="Agendar Retirada!"> <br/>
+  <input type="button" class="botao-proximo" onclick='listarProduto()' value="Agendar Retirada">
 </div>
 
 <footer class="footer">

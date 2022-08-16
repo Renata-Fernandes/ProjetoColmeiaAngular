@@ -13,7 +13,7 @@ export class CategoriaService {
 
   autorizacao = {
     //headers: new HttpHeaders().set('Authorization', environment.token)
-    headers: new HttpHeaders().set('Authorization', localStorage.getItem('token') || '')
+    headers: new HttpHeaders().set('Authorization', 'Basic dXNlckBnbWFpbC5jb206dXN1YXJpbzEyMw==' || '')
 
   }
 
