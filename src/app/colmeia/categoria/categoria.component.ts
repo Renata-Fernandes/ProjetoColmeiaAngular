@@ -30,7 +30,7 @@ export class CategoriaComponent implements OnInit {
 
     }*/
     this.listarCat();
-  
+    this.findAllCategorias();
 
 
   }
@@ -46,6 +46,9 @@ export class CategoriaComponent implements OnInit {
         listCateg.push(this.cate)
       })
       this.cate = listCateg;
+      console.log(this.cate);
+      console.log(listCateg)
+
     })
   }
   /* TRAZ TODOS OS ITENS CONTIDO DENTRO DA BASE DE DADOS DE CATEGORIA, DESSA FORMA RETORNANDO UM ARRAY */

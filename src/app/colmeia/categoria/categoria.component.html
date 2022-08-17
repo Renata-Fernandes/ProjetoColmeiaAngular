@@ -7,6 +7,13 @@
                   <i class="bi bi-chevron-double-left"></i> Home
               </a>
               / Categoria
+              
+              <div class="row">
+                <!-- input id ciclo 
+                <div class="col-md-6 ">
+                    <label class="text-nowrap" for="inputIdCiclo">Id Ciclo</label>
+                    <input type="number" formControlName="idCiclo" class="form-control" id="inputIdCiclo"
+                        [(ngModel)]="cate.id">-->
               <h1 class="fs-54 texto texto-responsivo">Categorias</h1>
               <table class="colunas">
                 <thead>
@@ -32,7 +39,7 @@
                   <div class="col-md-12">
                       <div class="form-group resposividade-botao">
                           <!-- VERIFICA SE OS DADOS INSERIDOS TEPO USUARIO, REALMENTE PERTENCEM A CLASSE TEMA -->
-                          <input ngModel='categoria.nome' type="text" class="form-control" id="nome" placeholder="Digite a nome da categoria">
+                          <input [(ngModel)]='categoria.nome' type="text" class="form-control" id="nome" placeholder="Digite a nome da categoria">
                           <!-- CHAMA A FUNCAO CRIADA cadastrar() DENTRO DA CLASSE, QUE TEM COMO FUNCAO, CADASTRAR O OBJETO TEMA -->
                           <button class="botao margem-botao" (click)='postCategoria()'>Cadastrar</button>
                       </div>
@@ -55,10 +62,10 @@
                         <!-- CRIA UM LOOP PARA IMPRIMIR NA TELA TODOS OS DADOS CONTIDOS DENTRO DA listaTema ==> Resposavel por armazenar os dados vindos da tabela Tema -->
                         <tr *ngFor='let item of cate'>
                           <td>{{item.nome}}</td>
-                         <!-- <td>
+                        <td>
                             <a class="btn botao-editar" data-bs-toggle="modal" data-bs-target="#putCategoria" (click)='findByIdCategoria(item.id)' >Editar</a>
                             <a class="btn botao-editar" (click)='deleteCategoria(item.id)' >Excluir</a>
-                          </td> -->
+                          </td> 
                         </tr>
                       </tbody>
                     </table>
@@ -83,7 +90,7 @@
           <div class="modal-body">
               <div class="form-group texto">
                   <label for="putNome">Nome</label>
-                  <input ngModel)]='categoria.nome' type="text" name="putNome" class="form-control texto-input" id="putNome" placeholder="Nome da Categoria">
+                  <input [(ngModel)]='categoria.nome' type="text" name="putNome" class="form-control texto-input" id="putNome" placeholder="Nome da Categoria">
               </div>
           </div>
           <div class="modal-footer">
