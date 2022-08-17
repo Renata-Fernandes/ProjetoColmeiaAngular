@@ -25,6 +25,7 @@ import { CadastroCdComponent } from './colmeia/cadastro-cd/cadastro-cd.component
 import { ColmeiaComponent } from './colmeia/colmeia.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ProdutoIdComponent } from './colmeia/produto-id/produto-id.component';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { FormsModule } from '@angular/forms';
     CadastroCdComponent,
     ProdutosBeneficiarioComponent,
     ColmeiaComponent,
-    CategoriaComponent
+    CategoriaComponent,
+    ProdutoIdComponent,
   ],
   imports: [
     BrowserModule,

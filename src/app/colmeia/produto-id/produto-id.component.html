@@ -1,0 +1,85 @@
+<title>Produtos disponíveis - Por Categoria Filtrada </title>
+<link href="https://fonts.googleapis.com/css?family=Niramit&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<section class="titulos">
+  <ul>
+    <li><a routerLink="/home"><button type="button" class="seta-voltar"></button></a>
+    </li>
+    <li class="chamada-produtos"><b>PRODUTOS DISPONÍVEIS</b></li>
+    <li class="acesse">Acesse por categoria</li>
+  </ul>
+</section>
+
+<section class="categorias">
+  <table class="colunas">
+    <thead>
+      <tr>
+        <th>Nome Produto</th>
+        <th>Estoque</th>
+        <th>Categoria</th>
+        <th>imagem</th>
+        <th class="quantidade"> quantidade maxima por beneficiario: 4 </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let produto of produtos">
+        <div *ngIf="produto.categoria.id==1">
+        <td>{{produto.nome}}</td>
+        <td>{{produto.estoque}}</td>
+        <td><img src="{{produto.img}}" width="200px" /></td>
+        <td><input id="qtdProd" ngModel name="qtdProd" type='number'  min='0' max='4' />
+                <button type="button" class="btn btn-warning" (click)="adicionarProd(produto)">Add</button>
+        </td>
+       <td> <button type="button" class="btn btn-warning" (click)="deletar(produto)">Deletar</button></td> </div>
+       <!--<td><div class="form-group">
+        <input class="form-control"    ngModel ="qtdProd" />
+      </div>
+      <div class="form-group">
+        <input type="submit" class="btnSubmit" value="Atualizar"(click)="adicionarProd(produto)"  />
+      </div></td>-->
+      </tr>
+    </tbody>
+
+  </table>
+
+</section>
+
+<!--<div class="botao">
+  <a href="#"><button type="submit" class="botao-proximo">AGENDAR RETIRADA</button></a>
+  <input type="button" class="botao-proximo" onclick="alert('Pedido agendado para retirada com sucesso!')"
+      value="Agendar Retirada!"> <br/>
+  <input type="button" class="botao-proximo" onclick='listarProduto()' value="Agendar Retirada">
+</div>-->
+
+<footer class="footer">
+  <a href="" class="logo">
+    <img src="../../assets/imagens/logo_projetocolmeia.png" alt="logo">
+  </a>
+  <nav class="footer-links">
+    <ul>
+      <li>
+        <p class="direitos">Copyright ©
+          <br>
+          2022 Vênus
+          <br>
+          Todos os direitos reservados.
+        </p>
+      </li>
+      <li><a routerLink="/sobre">
+          <p class="sobre">SOBRE</p><br>
+        </a>
+        <a routerLink="/termosecondicoes">
+          <p class="termos">TERMOS E CONDIÇÕES</p>
+        </a>
+      </li>
+      <li><a href="../contato/contato.component.html">
+          <p class="contato ">CONTATO</p>
+        </a></li>
+    </ul>
+  </nav>
+</footer>
+<div>
+
+

@@ -1,0 +1,297 @@
+.titulos { 
+	width:346px;
+	height:45px;
+	position:absolute;
+	left:80px;
+	top:200px;
+	list-style: none;	
+}
+.titulos ul li{
+	list-style: none;
+}
+tr{/** Faz o estilo para as linhas. **/
+	text-align: center; /** Centraliza o conteúdo. **/
+ }
+/* th{/** Faz o estilo para as células do cabeçalho. **/
+	/*background: #666; /** Muda para um fundo cinza. **/
+	/*color: white; /** Troca a cor da fonte para branco. **/
+	/*text-align: center;
+	
+ }*/
+
+.seta-voltar { 
+	width:32px;
+	height:32px;
+	position:absolute;
+	left:0px;
+	top:50px;
+	background-image:url(../../../assets/imagens/bot_o_voltar_1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	list-style: none;
+	background-color: white;
+	border-color: white;
+}
+.chamada-produtos { 
+	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
+	width:306px;
+	height:45px;
+	position:absolute;
+	left:64px;
+	top:52px;
+	font-family:Hind Siliguri;
+	text-align:left;
+	font-size:18px;
+	letter-spacing:0;
+	list-style: none;
+}
+.acesse { 
+	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
+	width:309px;
+	height:40px;
+	position:absolute;
+	left:64px;
+	top:100px;
+	font-family:Niramit;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+	line-height:px;
+	list-style: none;
+}
+.categorias{
+	padding-left: 320px;
+	padding-top: 300px;	
+	text-align: justify;
+	align-items: center;
+
+}
+.colunas{
+	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
+	font-family: Niramit;
+	font-size: 16px;
+	letter-spacing: 1px;
+	list-style: none;	
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 10px -15px;
+	padding-right: 80px;
+		
+}
+.colunas tr td{	
+	padding-left: 90px;
+	
+}
+.colunas th{
+	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
+	font-family: Niramit;
+	font-size: 16px;
+	letter-spacing: 1px;
+	background-color: rgba(232, 216, 183, 0.79);
+	border-color: rgba(253.0000001192093, 176.00000470876694, 24.000000469386578, 1);
+	text-align: center;
+	align-items: center;
+	padding-right: 20px;
+	padding-left:20px;
+}
+.caminho{
+	
+	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
+	font-family: Niramit;
+	font-size: 16px;
+	letter-spacing: 1px;
+	list-style: none;	
+	position:absolute;
+	top: 620px;
+	left: 100px;
+}
+.caminho ul li{
+	list-style: none;		
+	display: inline-block;
+	text-align: center;
+	align-items: center;
+	padding-right: 5px;
+}
+.seta{
+	width: 25px;	
+	height: 16px;
+	padding-top: 18px;
+	background-image: url(../../../assets/imagens/seta-passagem.svg);
+	background-repeat:no-repeat;
+	align-items: center;
+	background-color: white;
+	border-color: white;
+	
+}
+.produtos {	
+	display: inline-block;
+	position: relative;
+	left: 300px
+}
+.produtos1 {
+	border-radius: 5px;
+	align-items: center;
+	margin-top: 200px;
+}
+.produtos1 div img {
+	border-radius: 5px;
+	width: 180px;
+	height: 180px;
+	align-items: center;
+	display: inline-block;
+	padding-left: 50px;
+	
+}
+.legenda {
+	align-items: center;
+	display: inline-block;
+	color:rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
+	font-family: Niramit;
+	font-size: 16px;	
+	display: inline-block;
+	list-style: none;
+	position: relative;
+	left: 350px;
+}
+.legenda input {
+	width: 40px;	
+	margin-left: 2px;	
+}
+.legenda1 ul li p{
+	top:200px;
+	display: inline-block;	
+}
+.legendas1 ul li {
+	list-style: none;
+	display: inline-block;
+	padding-right: 130px;	
+	
+}
+.produtos2 {
+	border-radius: 5px;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.produtos2 div img {
+	border-radius: 5px;
+	width: 180px;
+	height: 180px;
+	align-items: center;
+	display: inline-block;
+	padding-left: 50px;
+}
+
+.botao {
+	width: 366px;
+	height: 212px;
+	position: absolute;
+	align-items: center;
+	top: 900px;
+	text-align: center;
+
+}
+
+.botao-proximo {
+	color: rgba(78.00000295042992, 49.00000087916851, 35.00000171363354, 1);
+	width: 150px;
+	height: 35px;
+	position: absolute;
+	left: 770px;
+	top: 100px;
+	font-family: Hind Siliguri;
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 0;
+	box-shadow: 8px 8px 30px rgba(255, 250, 250);
+	background-color: rgba(232, 216, 183, 0.79);
+	border: 1px solid rgba(253.0000001192093, 176.00000470876694, 24.000000469386578, 1);
+	border-radius: 12px;
+}
+
+/*rodapé*/
+
+.footer {
+    display:flexbox;
+    padding-left: 30px;
+    align-items: center;
+    position:absolute;
+    margin-top: 800px;    
+    font-family:Hind Siliguri;
+	background-color: rgba(245, 245, 245, 0.671);
+    height: 150px;  
+	width: 1640px;
+    box-shadow: 2px 2px 0px antiquewhite;
+}
+.direitos{
+    color: #4e3123;
+    align-items: center;    
+    font-family:Hind Siliguri;
+    font-size:8px;
+    text-align: center;
+    margin-left: -20px;
+    margin-top: -35px;
+}
+.direitos a{
+    color: #4e3123;
+    align-items: center;    
+    font-family:Hind Siliguri;
+    font-size:8px;
+    text-align: center;
+    margin-left: -5px;
+}
+.direitos a:hover{
+    color: #4e3123;
+    align-items: center;    
+    font-family:Hind Siliguri;
+    font-size:8px;
+    text-align: center;
+    margin-left: -5px;
+}
+.footer-links li {
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
+.footer-links ul {
+    display: flex;    
+    text-align: center;
+    align-items: center;
+}
+.footer-links ul li a {
+    margin-right: 30px;
+    margin-left: 350px;
+    margin-top: 15px;
+    display: flex;
+    color: #4e3123;    
+    text-transform: uppercase;
+    font-family:Hind Siliguri;
+    font-size:15px;
+    letter-spacing: 0.15em;
+    text-align: center;   
+}
+.termos{
+    text-align: center;  
+    margin-left: 270px;
+    margin-top: -90px;
+}
+.sobre {
+    text-align: center;  
+    margin-left: 326px;
+    margin-top: -90px;   
+}
+.contato {
+    text-align: center;  
+    margin-left: 150px;
+    margin-top: -90px;   
+}
+.logo img {
+    height: 100px;
+    width: 100px;
+    margin-right: 25px;
+    margin-top: 2px;
+}
+a {
+    text-decoration: none;
+    margin-top: -12px;
+    margin-left: 17px;
+    
+}
