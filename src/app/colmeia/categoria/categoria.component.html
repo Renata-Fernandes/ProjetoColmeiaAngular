@@ -1,12 +1,14 @@
 <!-- NOVO TESTE -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 <div class="tela">
     <div class="container texto">
       <div class="row d-flex align-items-start justify-content-center">
           <div class="col-md-5 texto">
               <a routerLink='/home' class="texto rota-link">
-                  <i class="bi bi-chevron-double-left"></i> Home
+                  <i class="bi bi-chevron-double-left"></i> Home/
               </a>
-              / Categoria
+              <a>Categorias </a>
               
               <div class="row">
                 <!-- input id ciclo 
@@ -14,34 +16,35 @@
                     <label class="text-nowrap" for="inputIdCiclo">Id Ciclo</label>
                     <input type="number" formControlName="idCiclo" class="form-control" id="inputIdCiclo"
                         [(ngModel)]="cate.id">-->
-              <h1 class="fs-54 texto texto-responsivo">Categorias</h1>
-              <table class="colunas">
+              <h1 class="fs-54 texto texto-responsivo">Categorias Cadastrada</h1>
+              <table class="table table-striped">
                 <thead>
                   <tr>
-                    <th>Nome Categoria</th>
-                    <th> Produto</th>
+                    <th scope="col">  </th>
+                  <!--   <th scope="col"> Produto</th>-->
                     
                   </tr>
                 </thead>
                 <tbody>
                   <tr *ngFor="let categoria of cate">
                     <td>{{categoria.nome}}</td>
-                    <td>{{categoria.produtos}}</td>
+                   <!-- <td>{{categoria.produtos}}</td>-->
                   </tr>
                 </tbody>
             
               </table>
              
 
-              <h5 class="fs-18 texto texto-responsivo">Veja aqui todos os temas cadastrados ou cadastre um novo:</h5>
-  
+              <!--<h5 class="fs-18 texto texto-responsivo">Veja aqui todos os temas cadastrados ou cadastre um novo:</h5> -->
+              
+              <h3 class="fs-54 texto texto-responsivo">Cadastre uma nova categoria</h3>
               <div class="row mt-4">
                   <div class="col-md-12">
                       <div class="form-group resposividade-botao">
                           <!-- VERIFICA SE OS DADOS INSERIDOS TEPO USUARIO, REALMENTE PERTENCEM A CLASSE TEMA -->
                           <input [(ngModel)]='categoria.nome' type="text" class="form-control" id="nome" placeholder="Digite a nome da categoria">
                           <!-- CHAMA A FUNCAO CRIADA cadastrar() DENTRO DA CLASSE, QUE TEM COMO FUNCAO, CADASTRAR O OBJETO TEMA -->
-                          <button class="botao margem-botao" (click)='postCategoria()'>Cadastrar</button>
+                          <button type="button" class="btn btn-warning" (click)='postCategoria()'> Cadastrar</button>
                       </div>
                   </div>
               </div>
@@ -55,7 +58,7 @@
                       <thead>
                         <tr>
                           <th scope="col">Descrição</th>
-                          <th scope="col">Edição</th>
+                          <!--<th scope="col">Edição</th> -->
                         </tr>
                       </thead>
                       <tbody>
@@ -64,7 +67,7 @@
                           <td>{{item.nome}}</td>
                         <td>
                             <a class="btn botao-editar" data-bs-toggle="modal" data-bs-target="#putCategoria" (click)='findByIdCategoria(item.id)' >Editar</a>
-                            <a class="btn botao-editar" (click)='deleteCategoria(item.id)' >Excluir</a>
+                            <a  type="button" class="btn btn-danger" (click)='deleteCategoria(item.id)' >Excluir</a>
                           </td> 
                         </tr>
                       </tbody>

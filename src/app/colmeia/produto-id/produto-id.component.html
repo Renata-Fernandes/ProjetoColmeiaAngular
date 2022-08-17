@@ -28,11 +28,12 @@
         <div *ngIf="produto.categoria.id==1">
         <td>{{produto.nome}}</td>
         <td>{{produto.estoque}}</td>
+        <td>{{produto.categoria.nome}}</td>
         <td><img src="{{produto.img}}" width="200px" /></td>
         <td><input id="qtdProd" ngModel name="qtdProd" type='number'  min='0' max='4' />
                 <button type="button" class="btn btn-warning" (click)="adicionarProd(produto)">Add</button>
         </td>
-       <td> <button type="button" class="btn btn-warning" (click)="deletar(produto)">Deletar</button></td> </div>
+       <td> <button  type="button" class="btn btn-danger"(click)="deletar(produto)">Deletar</button></td> </div>
        <!--<td><div class="form-group">
         <input class="form-control"    ngModel ="qtdProd" />
       </div>

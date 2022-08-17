@@ -16,7 +16,12 @@ const routes: Routes = [
   { path: 'sobre', component: SobreComponent},
   { path: 'cadastro', component: CadastroComponent},
   { path: 'categoria', component: CategoriaComponent},
-  { path: 'categoria-id', component: ProdutoIdComponent}
+  { path: 'categoria-id', component: ProdutoIdComponent},
+  {path: '',
+  component: ProdutosBeneficiarioComponent,
+  children: [
+    {path: 'categoria-id', component: ProdutoIdComponent}
+  ]}
 
 ];
 
