@@ -11,7 +11,8 @@ import { ProdutoService } from 'src/app/service/produto.service';
 export class ProdutosBeneficiarioComponent implements OnInit {
   private produtoService: ProdutoService;
   public produtos = {} as  Produto[];
-  public qtdProdutoSolicitado!: number;
+  public  qtdProdutoSolicitado!: number;
+  public qtdProd!: number;
   prod = {
       id:0,
       nome: "",
@@ -36,9 +37,9 @@ export class ProdutosBeneficiarioComponent implements OnInit {
   }
   adicionarProd(produto: any){
     // passar o valor do qtdprodsolic para item
-   // const qtdProd=document.getElementById('qtdProd').qtdProd.value;
-    produto.qtdItem =  this.qtdProdutoSolicitado; 
-    produto.estoque-= this.qtdProdutoSolicitado;
+   
+    produto.qtdItem =  this.qtdProd; 
+    produto.estoque-= this.qtdProd;
     this.produtoService.putProduto(produto).subscribe(()=>{
       this.listarProduto();
       alert("adicionado c sucesso")
