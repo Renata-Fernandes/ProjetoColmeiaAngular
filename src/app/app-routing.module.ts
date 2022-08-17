@@ -5,6 +5,7 @@ import { HomeComponent } from './colmeia/home/home.component';
 import { ProdutosBeneficiarioComponent } from './colmeia/produtos-beneficiario/produtos-beneficiario.component';
 import { LoginBeneficiarioComponent } from './login-beneficiario/login-beneficiario.component';
 import { SobreComponent } from './colmeia/sobre/sobre.component';
+import { CategoriaComponent } from './colmeia/categoria/categoria.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch:'full'},
@@ -12,8 +13,8 @@ const routes: Routes = [
   { path: 'produtos-beneficiarios', component: ProdutosBeneficiarioComponent},
   { path: 'login-beneficiario', component: LoginBeneficiarioComponent},
   { path: 'sobre', component: SobreComponent},
-  { path: 'cadastro', component: CadastroComponent}
-
+  { path: 'cadastro', component: CadastroComponent},
+  { path: 'categoria', component: CategoriaComponent}
 
 ];
 
